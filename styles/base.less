@@ -225,17 +225,24 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @tag;
   }
 
   &.other.attribute-name {
-    color: #de935f;
+    color: @attribute-name;
 
     &.id {
-      color: #00f;
+      color: @tag-id;
     }
   }
+}
+
+.html
+{
+	&.string
+	{
+		color: @tag-string;
+	}
 }
 
 .meta {
