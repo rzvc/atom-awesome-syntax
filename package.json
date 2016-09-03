@@ -1,0 +1,15 @@
+{
+  "name": "awesome-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "What feels right to me.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/rzvc/awesome-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
