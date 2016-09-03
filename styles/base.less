@@ -323,3 +323,52 @@ atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
 }
+
+
+
+.meta.magicview
+{
+	&.tag {
+		color: @mv-tag;
+		font-weight: bold;
+	}
+
+	&.operator {
+		color: @mv-operator;
+	}
+
+	&.extend,
+	&.include > .tag, &.include > .operator, &.include > .path,
+	&.output,
+	&.condition,
+	&.loop,
+	&.form,
+	&.inblock,
+	&.outblock
+	{
+		background-color: @mv-bg;
+	}
+
+	&.path {
+		color: @mv-extend;
+	}
+
+	&.inblock {
+		color: @mv-inblock;
+	}
+
+	&.outblock {
+		color: @mv-outblock;
+	}
+
+	&.comment {
+		color: @comment;
+	}
+}
+
+atom-text-editor::shadow {
+  .bracket-matcher .region {
+    background-color: rgba(0, 102, 255, 0.25);
+    border: 1px solid rgba(0, 102, 255, 0.5);
+  }
+}
