@@ -214,7 +214,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.function
   {
-	  color: @keyword;
+	  &.construct, &.array, &.json
+	  {
+		  color: @keyword;
+	  }
   }
 }
 
@@ -383,5 +386,10 @@ atom-text-editor::shadow {
   .bracket-matcher .region {
     background-color: rgba(0, 102, 255, 0.25);
     border: 1px solid rgba(0, 102, 255, 0.5);
+  }
+
+  .isearch-current .region {
+	  background-color: rgba(0, 102, 255, 0.25);
+	  border: 1px solid rgba(0, 102, 255, 0.5);
   }
 }
