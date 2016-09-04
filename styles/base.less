@@ -73,9 +73,9 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @control;
   }
 
-  &.operator {
+  /*&.operator {
     color: @syntax-text-color;
-  }
+  }*/
 
   &.other.special-method {
     color: @keyword;
@@ -99,6 +99,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.numeric {
     color: @number;
+  }
+
+  &.boolean {
+	  color: @boolean;
   }
 
   &.other.color {
@@ -210,7 +214,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @function;
   }
   &.name.type {
-    color: #f0c674;
+    color: @class;
   }
 
   &.other.inherited-class {
