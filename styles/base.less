@@ -91,7 +91,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .constant {
-  color: #de935f;
+  color: #754ccd;	// #5c32b5
 
   &.character.escape {
     color: @escape;
@@ -105,12 +105,21 @@ atom-text-editor .search-results .marker.current-result .region,
 	  color: @boolean;
   }
 
+  &.dom
+  {
+	  color: @dom-constant;
+  }
+
   &.other.color {
     color: @constant;
   }
 
   &.other.symbol {
     color: #b5bd68;
+  }
+
+  &.language.null {
+	  color: @keyword;
   }
 }
 
