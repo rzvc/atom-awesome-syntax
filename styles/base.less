@@ -282,6 +282,19 @@ atom-text-editor .search-results .marker.current-result .region,
     background-color: @gray;
     color: @syntax-text-color;
   }
+
+  &.type
+  {
+	  &.primitive
+	  {
+		  color: @keyword;
+	  }
+
+	  &.object
+	  {
+		  color: @class;
+	  }
+  }
 }
 
 .none {
