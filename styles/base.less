@@ -263,7 +263,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .meta {
   &.class {
-    color: #f0c674;
+    //color: #f0c674;
   }
 
   &.link {
@@ -294,6 +294,11 @@ atom-text-editor .search-results .marker.current-result .region,
 	  {
 		  color: @class;
 	  }
+  }
+
+  &.object-literal.key
+  {
+	  color: @object-key;
   }
 }
 
